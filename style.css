@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+    font-family: 'Arial', sans-serif; /* Set a default font */
+}
+
+.main {
+    width: 100%;
+    background-image: url(bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+.container h3{
+    color: #006A71;
+}
+
+.container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar{
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    width: 60px;
+    cursor: pointer;
+    margin-top: 0.5%;
+    margin-left: -4%;
+}
+
+
+
+ul {
+    display: flex;
+    padding: 0;
+    margin-left: auto;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #3b9496;
+    transition: .4s ease;
+    margin-top: -3%;
+}
+
+ul li a:hover {
+    color: rgb(79, 196, 235);
+}
+
+/* Info Section */
+.info {
+    
+    margin-left: 4%;
+    margin-top: 14%;
+
+}
+
+.info h1 {
+    font-size: 45px;
+    color: #0e6a70;
+}
+
+.info h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.info span {
+    color: hwb(186 25% 29%);
+    font-weight: 550;
+}
+
+.info a {
+    text-decoration: none;
+    color: #4cc2cf;
+    font-size: 20px;
+    background: rgb(57, 59, 59);
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .4s ease;
+}
+
+.info a:hover {
+    background: rgb(60, 121, 156);
+}
+
+/* Image Styling */
+.image {
+    width: 50%;
+    height: auto;
+    position: relative; /* Changed to relative */
+    margin-left: auto;
+     /* Center the image */
+    bottom: 0;
+}
+
+.image img {
+    width: 50%;
+    height: auto;
+    display: block; /* Ensures no extra space below the image */
+    margin: 0 auto; /* Center the image */
+    transition: transform 1.5s ease;
+    
+}
+.image:hover img {
+    transform: translateX(5%);
+}
+
+/* Info Section */
+.info {
+    margin-top: 5%; /* Keep the top margin */
+    margin-left: 20px; /* Add some left margin for spacing */
+    margin-right: auto; /* Allow right margin to take up remaining space */
+    text-align: left; /* Align text to the left */
+    color: #2e2d2d; /* White text for contrast */
+
+    display: flex; /* Enable Flexbox for vertical stacking */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left within the flex container */
+}
+
+/* Styling for the button (if you need to adjust it) */
+.info a {
+    display: inline-block;
+    text-decoration: none;
+    color: #4cc2cf;
+    font-size: 20px;
+    background: rgb(57, 59, 59);
+    margin-top: 20px; /* Add some space above the button */
+    padding: 10px 18px;
+    border-radius: 10px;
+    transition: .4s ease;
+}
+
+.info a:hover {
+    background: rgb(60, 121, 156);
+}
+
+/* Info Section */
+.info {
+    margin-top: 8%;
+    margin-left: 60px;
+    margin-right: auto;
+    text-align: left;
+    color: #2e2d2d;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+}
+
+/* Styling for the button */
+.info a {
+    display: inline-block;
+    text-decoration: none;
+    color: #4cc2cf;
+    font-size: 20px;
+    background: rgb(57, 59, 59);
+    margin-top: 20px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    transition: .4s ease;
+}
+
+.info a:hover {
+    background: rgb(60, 121, 156);
+}
+
+
+/* Icons Styling */
+.icons {
+    display: flex;
+    justify-content: flex-start; /* Align icons to the left */
+    position: absolute; /* Take it out of the normal flow */
+    top: 35rem; /* Position it 20px from the top of its closest positioned ancestor */
+    left: 50px; /* Position it 20px from the left of its closest positioned ancestor */
+    z-index: 10; /* Ensure it's above other elements */
+}
+
+.icons a {
+    margin-right: 15px;
+}
+
+.icons svg {
+    color: #006A71;
+    transition: .4s ease;
+    width: 40px; /* Adjust size as needed */
+    height: 25px; /* Adjust size as needed */
+}
+
+.icons svg:hover {
+    color: rgb(50, 235, 235);
+}
+
+/* --- Improved Content Section Styling --- */
+.content-section {
+    padding: 80px 20px;
+    text-align: center;
+    margin-bottom: -30px; /* Negative margin to create overlap */
+    position: relative; /* Needed for z-index if we add more complex overlaps */
+}
+
+.content-section .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px; /* Add some padding inside the container */
+    background-color: inherit; /* Inherit the section background */
+    border-radius: 8px; /* Optional: Add rounded corners to the content area */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+}
+
+.content-section:not(:last-of-type) {
+    margin-bottom: -60px; /* Increased negative margin for more overlap */
+    padding-bottom: 120px; /* Adjust padding to accommodate overlap */
+}
+
+.content-section h2 {
+    color: #006A71;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.content-section p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* About Section Styling */
+.about-me {
+    background: linear-gradient(to right , #cedee9, #d0dbd9); /* Gradient background */
+    padding-top: 120px; /* Adjust top padding to accommodate overlap */
+    position: relative; /* For z-index if needed */
+}
+
+.about-me .container {
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    padding: 40px; /* Padding inside the container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.about-me h2 {
+    color: #006A71;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Skills Section Styling */
+.skills {
+    background: linear-gradient(to right, #c7e0e0, #c9dddd); /* Gradient background */
+    padding-top: 90px; /* Adjust top padding for overlap */
+}
+
+.skills .container {
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    padding: 40px; /* Padding inside the container */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.skills h2 {
+    color: #006A71;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills-list ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills-list ul li {
+    font-size: 16px;
+    color: #057577;
+    background-color: #fff; /* White skill pills */
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #b2ebf2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06); /* Subtle shadow for pills */
+}
+
+/* Works Section Styling */
+.works {
+    background: linear-gradient(to right, #c9dddd, #f4f4f4); /* Gradient background */
+    padding-top: 90px; /* Adjust top padding for overlap */
+}
+
+.works .container {
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    padding: 40px; /* Padding inside the container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.works h2 {
+    color: #006A71;
+    margin-bottom: 20px;
+}
+
+.works .projects {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.works .project {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.works .project:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.works .project h3 {
+    color: #006A71;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.works .project p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.works .project a {
+    color: #4cc2cf;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.works .project a:hover {
+    color: #057577;
+}
+
+/* Contact Section Styling */
+.contact-me {
+    background: linear-gradient(to right, #c9dddd, #f4f4f4);/* Gradient background */
+    color: #413c3c; /* Ensure text is readable */
+    padding-top: 90px; /* Adjust top padding for overlap */
+    padding-bottom: 120px; /* Add padding at the bottom */
+}
+
+.contact-me h2,
+.contact-me p,
+.contact-me ul li a {
+    color: #363232; /* Ensure text is readable on the dark background */
+}
+
+.contact-me h2 {
+    margin-bottom: 20px;
+}
+
+.contact-me p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-me ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.contact-me ul li {
+    margin-bottom: 10px;
+}
+
+.contact-me ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-me ul li a:hover {
+    color: #84afaf; /* A lighter shade for hover */
+}
+
+/* --- Footer Styling --- */
+.footer {
+    background-color: #404444;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer .container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #4cc2cf;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #057577;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .info {
+        margin-top: 20%;
+    }
+
+    .image {
+        width: 80%;
+    }
+
+    .content-section {
+        padding: 60px 15px;
+        margin-bottom: -20px; /* Adjust overlap on smaller screens */
+    }
+
+    .content-section:not(:last-of-type) {
+        margin-bottom: -40px; /* Adjust overlap on smaller screens */
+        padding-bottom: 80px; /* Adjust padding */
+    }
+
+    .content-section .container {
+        padding: 20px; /* Adjust container padding */
+        border-radius: 0; /* Remove rounded corners on smaller screens */
+        box-shadow: none; /* Remove shadow on smaller screens for a cleaner look */
+    }
+
+    .content-section h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .content-section p {
+        font-size: 16px;
+    }
+
+    .skills-list ul li {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .works .projects {
+        grid-template-columns: 1fr; /* Stack projects on smaller screens */
+    }
+
+    .contact-me {
+        padding-bottom: 80px; /* Adjust padding */
+        padding-top: 80px; /* Adjust top padding */
+    }
+
+    .footer {
+        padding: 30px 15px;
+        font-size: 12px;
+    }
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar .logo {
+        width: 45px;
+        cursor: pointer;
+        margin-top: -1%;
+        margin-left: -4%;
+        margin-bottom: -12%;
+    }
+    
+}
+
